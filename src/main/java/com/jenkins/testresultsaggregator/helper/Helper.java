@@ -117,7 +117,7 @@ public class Helper {
 		String percentage;
 		if (results != null && results.getTotal() != 0) {
 			try {
-				percentage = singDoubleSingle((double) (results.getPass() + results.getSkip()) * 100 / results.getTotal());
+				percentage = singDoubleSingle((double) results.getPass() * 100 / results.getTotal());
 				if (percentage.equals("100")) {
 					return 100D;
 				}
